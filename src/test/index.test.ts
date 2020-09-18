@@ -1,4 +1,4 @@
-const FormatPrice = require('./index').default;
+const FormatPrice = require('../index').default;
 
 describe('1. Use default options', function() {
 
@@ -43,6 +43,10 @@ describe('1. Use default options', function() {
   it('should return 10.00 when the value is 00010', function() {
     expect(f.formatPrice('00010')).toEqual('10.00')
   })
+
+  it('should return -123,456 when the value is -123456', function() {
+    expect(f.formatPrice('-123456')).toEqual('-123,456.00')
+  })
 })
 
 describe('2. use custom options', function() {
@@ -61,7 +65,7 @@ describe('2. use custom options', function() {
     expect(f.formatPrice('12.8765')).toEqual('12')
   })
 
-  it('should return 100000000000 when the value is 100000000000', function() {
-    expect(f.formatPrice('100000000000')).toEqual('12')
+  it('should return -1 000 when the value is -1000', function() {
+    expect(f.formatPrice('-1000')).toEqual('-1 000')
   })
 })

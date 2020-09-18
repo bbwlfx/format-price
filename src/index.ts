@@ -122,6 +122,9 @@ export default class FormatPrice {
 
     // the decimal part is too long
     if(decimal && decimal.length > this._decimalPlaces) {
+      if(this._decimalPlaces <= 0) {
+        return this._addSeparatorToInteger(integer.toString());
+      }
       const slicedDecimal = decimal.slice(0, this._decimalPlaces);
       return this._addSeparatorToInteger(integer.toString()) + `.${slicedDecimal}`;
     }
