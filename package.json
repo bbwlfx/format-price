@@ -1,0 +1,41 @@
+{
+  "name": "simple-format-price",
+  "version": "1.0.0",
+  "description": "a simple util to help you format the price number.",
+  "main": "dist/index.umn.js",
+  "module": "dist/index.esm.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "dev": "rollup -cw",
+    "build-declarations": "tsc -d && node scripts/move-type-declarations.js",
+    "build": "yarn build-declarations && rollup -c",
+    "test": "yarn test:types && yarn test:jest",
+    "test:jest": "jest",
+    "test:types": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbwlfx/format-price.git"
+  },
+  "keywords": [
+    "format-price",
+    "format",
+    "price"
+  ],
+  "author": "liufeixiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbwlfx/format-price/issues"
+  },
+  "homepage": "https://github.com/bbwlfx/format-price#readme",
+  "devDependencies": {
+    "glob": "^7.1.6",
+    "jest": "^26.4.2",
+    "rollup": "^2.27.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "sander": "^0.6.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.2"
+  }
+}
