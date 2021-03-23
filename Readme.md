@@ -4,15 +4,15 @@ This is a simple util to help you format the price number to show.
 ## How to install
 
 ```
-npm install simple-format-price@latest
+npm install @byted-oec/simple-format-price@latest
 or
-yarn add simple-format-price@latest
+yarn add @byted-oec/simple-format-price@latest
 ```
 
 
 ## How to use
 ```
-import FormatPrice from 'simple-format-price';
+import FormatPrice from '@byted-oec/simple-format-price';
 
 const format = new FormatPrice();
 
@@ -29,7 +29,7 @@ format.formatPrice('123456789'); // 123,456,789
 |maxIntegerLength|number|9|No|The max length of integer part that we should show.|
 
 ```
-import FormatPrice from 'simple-format-price';
+import FormatPrice from '@byted-oec/simple-format-price';
 
 const format = new FormatPrice({
   separator: ' ',
@@ -81,14 +81,14 @@ output: 0.00
 ## 如何安装
 
 ```
-npm install simple-format-price@latest
+npm install @byted-oec/simple-format-price@latest
 or
-yarn add simple-format-price@latest
+yarn add @byted-oec/simple-format-price@latest
 ```
 
 ## 如何使用
 ```
-import FormatPrice from 'simple-format-price';
+import FormatPrice from '@byted-oec/simple-format-price';
 
 const format = new FormatPrice();
 
@@ -106,7 +106,7 @@ format.formatPrice('123456789'); // 123,456,789
 |maxIntegerLength|number|9|No|最大展示整数部分的长度|
 
 ```
-import FormatPrice from 'simple-format-price';
+import FormatPrice from '@byted-oec/simple-format-price';
 
 const format = new FormatPrice({
   separator: ' ',

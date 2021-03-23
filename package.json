@@ -1,5 +1,5 @@
 {
-  "name": "simple-format-price",
+  "name": "@byted-oec/simple-format-price",
   "version": "1.0.0",
   "description": "a simple util to help you format the price number.",
   "main": "dist/index.umn.js",
